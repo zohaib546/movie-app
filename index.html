@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<!-- Font Awesome Script -->
+		<!-- <script src="https://kit.fontawesome.com/7ae40850c4.js" crossorigin="anonymous"></script> -->
+		<!-- Font Awesome Css -->
+		<link rel="stylesheet" href="css/font-awesome/css/all.css" />
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/main.css" />
+		<title>Movie Booking App</title>
+	</head>
+	<body>
+		<!-- As a heading -->
+		<nav class="navbar navbar-dark bg-primary">
+			<h1 class="h1 text-white m-auto">Movie Booking</h1>
+		</nav>
+
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="offset-md-3"></div>
+					<div class="col-md-6">
+						<div class="form-group my-3 text-center">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<label class="input-group-text" for="movie-option">Pick A Movie</label>
+								</div>
+								<select class="custom-select" id="movie-option">
+									<option value="options" selected disabled>Options...</option>
+									<option value="avengers">Avengers Endgame - 10$</option>
+									<option value="blackPanther">Black Panther - 8$</option>
+									<option value="batmanVsSuperman">Batman vs Superman - 15$</option>
+								</select>
+							</div>
+						</div>
+						<div class="d-flex justify-content-center">
+							<div class="status d-flex align-items-center mr-3">
+								<span>Available:</span>
+								<div class="block ml-2 bg-main"></div>
+							</div>
+							<div class="status d-flex align-items-center mr-3">
+								<span>Selected:</span>
+								<div class="block ml-2 bg-warning"></div>
+							</div>
+							<div class="status d-flex align-items-center mr-3">
+								<span>Occupied:</span>
+								<div class="block ml-2 bg-secondary"></div>
+							</div>
+						</div>
+						<div class="hall">
+							<div class="screen">screen</div>
+							<div class="seats d-flex justify-content-center">
+								<div class="left-seats mr-3">
+									<div class="d-flex">
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+									</div>
+									<div class="d-flex">
+										<div class="block bg-main"></div>
+										<div class="block bg-secondary"></div>
+										<div class="block bg-main"></div>
+									</div>
+									<div class="d-flex">
+										<div class="block bg-main"></div>
+										<div class="block bg-secondary"></div>
+										<div class="block bg-secondary"></div>
+									</div>
+									<div class="d-flex">
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+									</div>
+									<div class="d-flex">
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+									</div>
+								</div>
+								<div class="center-seats mr-3">
+									<div class="d-flex">
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+									</div>
+									<div class="d-flex">
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+									</div>
+									<div class="d-flex">
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+									</div>
+									<div class="d-flex">
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+									</div>
+									<div class="d-flex">
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+										<div class="block bg-secondary"></div>
+										<div class="block bg-secondary"></div>
+										<div class="block bg-secondary"></div>
+									</div>
+								</div>
+								<div class="right-seats">
+									<div class="d-flex">
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+									</div>
+									<div class="d-flex">
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+									</div>
+									<div class="d-flex">
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+										<div class="block bg-secondary"></div>
+									</div>
+									<div class="d-flex">
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+									</div>
+									<div class="d-flex">
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+										<div class="block bg-main"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="offset-md-3"></div>
+				</div>
+				<div class="results my-3">
+					<p class="lead text-center">
+						You have selected <span class="number-seats text-success">0</span> seats for a price of
+						<span class="price-seats text-success">$0</span>
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery.js"></script>
+		<script src="js/popper.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
